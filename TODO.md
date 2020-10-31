@@ -11,3 +11,27 @@
 8. make models and seed some things
 9. Connect to frontend, start to refactor towards redux & hooks
 10. Make pages and new components i.e. profile page & listing page
+
+Homepage is detect face
+Nav: All users -> click on user -> detailpage said user | My profile | About | Sign out
+
+TODO
+
+RANKS
+
+1. addcolumn: entries to user i.e. set-up-relations
+2. list.map for rank page including username & amount of entries
+   -> Detail per user
+3. Caroussel component for each image
+4. Detection box per photo
+
+ABOUT
+
+1. Card for Clarifai
+2. Card for Codaisseur/ZTM template
+3. Card for info about the app i.e. used tools
+
+Profile
+
+1. Profile info
+2. Edit or delete images
