@@ -10,9 +10,7 @@ router.get("/", async (req, res, next) => {
   console.log("is this happening?");
   try {
     console.log("SAY USER", User);
-    const users = await User.findAll({
-      // include: { model: Entry, attributes: ["userId"] },
-    });
+    const users = await User.findAll({});
     res.json(users);
   } catch (e) {
     next(e);

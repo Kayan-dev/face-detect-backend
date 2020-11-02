@@ -8,7 +8,7 @@ const Image = require("../models").image;
 router.post("/", async (req, res, next) => {
   try {
     const { image } = req.body;
-    console.log("IMAGE:", image);
+    console.log("IMAGE Post?", image);
     const newImage = await Image.create({
       ImageUrl: image,
     });
