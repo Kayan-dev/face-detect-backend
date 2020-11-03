@@ -122,9 +122,9 @@ if (process.env.DELAY) {
  */
 
 // GET endpoint for testing purposes, can be removed
-app.get("/", (req, res) => {
-  res.send("Hi from express");
-});
+// app.get("/", (req, res) => {
+//   res.send("Hi from express");
+// });
 
 // POST endpoint for testing purposes, can be removed
 app.post("/echo", (req, res) => {
