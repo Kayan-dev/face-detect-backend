@@ -152,6 +152,7 @@ app.post("/authorized_post_request", authMiddleWare, (req, res) => {
   });
 });
 
+app.use(express.static("public"));
 app.use("/", authRouter);
 app.use("/user", userRouter);
 app.use("/image", imageRouter);
