@@ -16,7 +16,7 @@
     "username": "root",
     "password": null,
     "database": "database_production",
-    "host": "127.0.0.1",
+    "host": "postgresql-cylindrical-92582",
     "dialect": "postgres",
     "operatorsAliases": "0"
   }
