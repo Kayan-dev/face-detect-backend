@@ -151,7 +151,7 @@ app.post("/authorized_post_request", authMiddleWare, (req, res) => {
     },
   });
 });
-console.log(process.env);
+
 app.use(express.static("public"));
 app.use("/", authRouter);
 app.use("/user", userRouter);
