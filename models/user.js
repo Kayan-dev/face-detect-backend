@@ -10,6 +10,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       user.hasMany(models.entry);
+      user.hasMany(models.image);
     }
   }
   user.init(

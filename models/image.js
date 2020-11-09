@@ -9,6 +9,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       image.hasOne(models.entry);
+      image.belongsTo(models.user);
     }
   }
   image.init(
