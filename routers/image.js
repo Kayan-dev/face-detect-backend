@@ -3,7 +3,7 @@ const { Router } = require("express");
 const router = new Router();
 
 const Image = require("../models").image;
-// const User = require("../models").user;
+const User = require("../models").user;
 
 router.post("/", async (req, res, next) => {
   try {
