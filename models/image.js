@@ -8,16 +8,14 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      image.hasOne(models.entry);
-      image.belongsTo(models.user);
+      image.hasOne(models.entry), image.belongsTo(models.user);
     }
   }
   image.init(
     {
       ImageUrl: { type: DataTypes.STRING, allowNull: false },
+      userId: { type: DataTypes.INTEGER, allowNull: true },
     },
-
-    { userId: { type: DataTypes.INTEGER, allowNull: true } },
     {
       sequelize,
       modelName: "image",
