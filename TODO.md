@@ -35,3 +35,13 @@ Profile
 
 1. Profile info
 2. Edit or delete images
+
+FRONTEND
+
+1. Fix the margins per <div> so you can still click on the background;
+   - make a max width margin
+2. Again, fix the carousel
+3. About; make a card that explains each frontend & backend
+4. Images; if imageUrl is "", do not show ; filter out
+   - show only images per specific user
+5. Profile; delete images specific for each user

@@ -17,16 +17,4 @@ router.get("/", async (req, res, next) => {
   }
 });
 
-// router.get("/rank", async (req, res, next) => {
-//   console.log("RANKKKKK?");
-//   try {
-//     const user = await Table.findAll({
-//       include: { model: Reservation, attributes: ["date"] },
-//     });
-//     res.json(tables);
-//   } catch (e) {
-//     next(e);
-//   }
-// });
-
 module.exports = router;

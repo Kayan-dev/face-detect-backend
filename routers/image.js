@@ -7,10 +7,11 @@ const Image = require("../models").image;
 
 router.post("/", async (req, res, next) => {
   try {
-    const { image } = req.body;
+    const { image, id } = req.body;
     console.log("IMAGE Post?", image);
     const newImage = await Image.create({
       ImageUrl: image,
+      userId: id,
     });
     res.send(newImage);
   } catch (e) {
