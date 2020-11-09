@@ -27,7 +27,7 @@ RANKS
 
 ABOUT
 
-1. Card for Clarifai
+1. Card for Clarifai, when clicked go to clarifai website
 2. Card for Codaisseur/ZTM template
 3. Card for info about the app i.e. used tools
 
