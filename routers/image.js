@@ -5,19 +5,22 @@ const router = new Router();
 const Image = require("../models").image;
 const User = require("../models").user;
 
-// router.post("/", async (req, res, next) => {
-//   try {
-//     const { image, userId } = req.body;
-//     // console.log("IMAGE Post?", image);
-//     // console.log("WHICH ID?:", id);
-//     const user = await User.findByPk(req.params.id);
-//     // console.log("USERID", user);
-//     const newImage = await Image.create({});
-//     res.send(newImage);
-//   } catch (e) {
-//     next(e);
-//   }
-// });
+router.post("/", async (req, res, next) => {
+  try {
+    const { image, Id } = req.body;
+    // console.log("IMAGE Post?", image);
+    // console.log("WHICH ID?:", id);
+    const user = await User.findByPk(req.params.id);
+    // console.log("USERID", user);
+    const newImage = await Image.create({
+      ImageUrl: image,
+      userId: Id,
+    });
+    res.send(newImage);
+  } catch (e) {
+    next(e);
+  }
+});
 
 router.get("/", async (req, res, next) => {
   try {
