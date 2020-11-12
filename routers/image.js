@@ -1,4 +1,5 @@
 const { Router } = require("express");
+const auth = require("../auth/middleware");
 
 const router = new Router();
 
@@ -13,6 +14,17 @@ router.post("/", async (req, res, next) => {
       userId: id,
     });
     res.send(newImage);
+  } catch (e) {
+    next(e);
+  }
+});
+
+router.delete("/:id", auth, async (req, res, next) => {
+  try {
+    const imageId = req.params.id;
+    const deleteStory = await Image.findByPk(imageId);
+    await deleteStory.destroy();
+    res.json(deleteStory);
   } catch (e) {
     next(e);
   }
