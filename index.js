@@ -152,6 +152,15 @@ app.post("/authorized_post_request", authMiddleWare, (req, res) => {
   });
 });
 
+//Catch-all requests to index.html so that React Router can work from there
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname, "path/to/your/index.html"), function (err) {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
+});
+
 app.use(express.static("public"));
 app.use("/", authRouter);
 app.use("/user", userRouter);
