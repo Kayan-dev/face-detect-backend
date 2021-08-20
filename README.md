@@ -9,6 +9,8 @@ The migration modules are used to add new data.
 
 A relative simple middleware, authentication is created with RESTful API to communicate with the frontend.
 JWT tokens are used including authentication of the HTTP requests before being routed to the corresponding HTTP requests.
+The routers are created with express.js.
+
 
 ## Table of contents:
 
