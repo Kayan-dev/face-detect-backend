@@ -1,6 +1,11 @@
-# Server template
+# About
 
-This is a simple server template to for my students to start projects quickly.
+This is the backend of my fullstack web application project that uses the face detection model from Clarifai.
+The backend is written using node.js.
+De database is made with ElephantSql and the databases have been set-up using postgreSQL.
+
+A relative simple middleware, authentication is created with RESTful API to communicate with the frontend.
+
 
 ## Table of contents:
 
