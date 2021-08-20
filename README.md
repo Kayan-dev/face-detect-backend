@@ -2,10 +2,13 @@
 
 This is the backend of my fullstack web application project that uses the face detection model from Clarifai.
 The backend is written using node.js.
+
 De database is made with ElephantSql and the databases have been set-up using postgreSQL.
+Relational models are created using sequelize. Seeders are used to add initial data for testing.
+The migration modules are used to add new data.
 
 A relative simple middleware, authentication is created with RESTful API to communicate with the frontend.
-
+JWT tokens are used including authentication of the HTTP requests before being routed to the corresponding HTTP requests.
 
 ## Table of contents:
 
