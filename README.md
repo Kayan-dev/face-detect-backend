@@ -11,6 +11,8 @@ A relative simple middleware, authentication is created with RESTful API to comm
 JWT tokens are used including authentication of the HTTP requests before being routed to the corresponding HTTP requests.
 The routers are created with express.js.
 
+The app is deployed for free using heroku.
+
 
 ## Table of contents:
 
