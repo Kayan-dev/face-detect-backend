@@ -25,7 +25,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "httpie": "^1.1.2",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "morgan": "^1.9.1",
     "pg": "^8.4.2",
     "psql": "0.0.1",
